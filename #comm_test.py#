@@ -1,0 +1,12 @@
+#Comm Test of Pathfinder Robot
+#Brian Oleson 3-17-2019
+#This program will communicate with the Baby O. via I2C
+#to do different on-board functions.  This will test the
+#comm protocol, only.  The function calls do not carry-
+#over to the final Pathfinder product.
+
+import time, smbus
+
+bus = smbus.SMBus(0)
+bOadd = 0x08
+
